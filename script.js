@@ -46,7 +46,7 @@ function takeCommand(message) {
     if (message.includes("hello") || message.includes("hey") || message.includes("नमस्ते")) {
         speak("Hello sir, what can I help you with today?", lang);
     } else if (message.includes("who are you") || message.includes("तुम कौन हो")) {
-        speak("I am a virtual assistant, created by Sunil . I am here to make your life easier.", lang);
+        speak("I am Jarvis, a virtual assistant, created by Sunil . I am here to make your life easier.", lang);
     } else if (message.includes("open youtube") || message.includes("यूट्यूब खोलो")) {
         speak("Opening YouTube for you. Enjoy your videos!", lang);
         window.open("https://youtube.com/", "_blank");
@@ -82,7 +82,7 @@ function takeCommand(message) {
         window.open("https://stackoverflow.com/", "_blank");
     } else if (message.includes("open email") || message.includes("ईमेल खोलो")) {
         speak("Opening email. Let's check your inbox!", lang);
-        window.open("mailto: codewithpanda28@gmail.com", "_blank");
+        window.open("mailto: sunilsahoo5075@gmail.com", "_blank");
     } else if (message.includes("what's the weather") || message.includes("weather update") || message.includes("मौसम कैसा है")) {
         speak("Fetching the latest weather update for you. Please wait a moment.", lang);
         fetch('https://api.openweathermap.org/data/2.5/weather?q=YourCity&appid=YourAPIKey')

@@ -14,10 +14,20 @@ body{
     gap:30px;
     flex-direction: column;
 }
-#logo{
+#logo {
     margin-top: 2%;
     width: 28vw;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow:
+        0 0 25px rgba(0, 255, 255, 0.6),
+        0 0 60px rgba(0, 255, 255, 0.4),
+        0 0 90px rgba(255, 0, 255, 0.3),
+        inset 0 0 20px rgba(0, 255, 255, 0.5);
+    animation: pulseGlow 3s infinite ease-in-out;
 }
+
 h1{
     color: aliceblue;
     font-family: "Protest Guerrilla", sans-serif;
@@ -67,3 +77,103 @@ h1{
     transform: translateY(1px);
     box-shadow: 0 0 10px rgb(21, 145, 207), 0 0 10px rgb(201, 41, 116);
 }
+
+
+/* Keyframe animations */
+@keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseLogo {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes bounceButton {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+
+    #logo {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 30px;
+      animation: pulseLogo 2s infinite;
+    }
+  
+    h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      animation: fadeSlideIn 1s ease-out;
+    }
+  
+    #name, #va {
+      font-size: 28px;
+    }
+  
+    #btn {
+      width: 80%;
+      font-size: 16px;
+      animation: bounceButton 2s infinite;
+    }
+  
+    #voice {
+      width: 70px;
+    }
+  }
+  
+  /* Tablet View */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    #logo {
+      width: 40vw;
+      animation: pulseLogo 3s infinite;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      animation: fadeSlideIn 1s ease-out;
+    }
+  
+    #name, #va {
+      font-size: 35px;
+    }
+  
+    #btn {
+      width: 60%;
+      font-size: 18px;
+      animation: bounceButton 3s infinite;
+    }
+  
+    #voice {
+      width: 80px;
+    }
+  }
+  
+  

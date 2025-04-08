@@ -76,9 +76,7 @@ Jarvis AI is a simple virtual assistant that uses speech synthesis and speech re
 
 > Note: Replace `YourCity` and `YourAPIKey` in the `script.js` file with your actual city name and API key for the OpenWeather API.
 
-## Screenshots
 
-![Interface](https://via.placeholder.com/600x300.png?text=Jarvis+AI+Interface)
 
 ## Future Improvements
 
@@ -88,16 +86,16 @@ Jarvis AI is a simple virtual assistant that uses speech synthesis and speech re
 
 ## Author
 
-**Akash Kumar**  
+**Sunil Sahoo**  
 Frontend Developer  
-Email: akashkumar.webdev@gmail.com  
-Phone: +91 8252472186  
+Email: sunilsahoo5075@gmail.com  
+Phone: +91 8658263704  
 
 ### Social Media
 
-- [Instagram] => https://www.instagram.com/panda_creation_29?igsh=MXoydTd4cjF5MnFq
-- [WhatsApp] => (https://wa.me/918252472186)
-- [LinkedIn] => https://www.linkedin.com/in/codewithpanda28/
+- [Instagram] => https://www.instagram.com/sunil_sahoo_45/
+- [WhatsApp] => (https://wa.me/918658263704)
+- [LinkedIn] => https://www.linkedin.com/in/sunil-sahoo96/
 
 ---
 
